@@ -1,0 +1,23 @@
+{
+  "name": "saturn-x-promo",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Video promo 60 detik untuk bot Telegram Saturn X (Remotion)",
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "render": "remotion render src/index.ts SaturnXPromo out/saturn-x-promo.mp4",
+    "still": "remotion still src/index.ts SaturnXPromo out/preview.png --frame=1100",
+    "check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@remotion/cli": "^4.0.0",
+    "@remotion/google-fonts": "^4.0.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "remotion": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.0",
+    "typescript": "^5.4.0"
+  }
+}
